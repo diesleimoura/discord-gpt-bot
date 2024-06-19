@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const axios = require('axios');
 
 // Configuração das chaves da API
-const discordToken = 'MTI1Mjc0MDk5MDA5MjE4NTY1MQ.G35BR9.E7nsaw1L38rTxTms3tDz-DH9JRSCWVJStkRpBo';
+const discordToken = 'MTI1Mjc0MDk5MDA5MjE4NTY1MQ.GeRftG.bGQBQHl74i7GdD2TWEj6JViwG5NpXkZDDqjPPM';
 const openaiApiKey = 'sk-proj-ZbfD6uWKIIrtKLFHHENnT3BlbkFJlFJXCSeFZjrVLX0xSEev';
 
 // Definição da persona
