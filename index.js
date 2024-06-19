@@ -3,8 +3,13 @@ const axios = require('axios');
 require('dotenv').config(); // Adicione esta linha para carregar as variáveis de ambiente
 
 // Configuração das chaves da API
+<<<<<<< HEAD
 const discordToken = process.env.DISCORD_TOKEN;
 const openaiApiKey = process.env.OPENAI_API_KEY;
+=======
+const discordToken = 'MTI1Mjc0MDk5MDA5MjE4NTY1MQ.GeRftG.bGQBQHl74i7GdD2TWEj6JViwG5NpXkZDDqjPPM';
+const openaiApiKey = 'sk-proj-ZbfD6uWKIIrtKLFHHENnT3BlbkFJlFJXCSeFZjrVLX0xSEev';
+>>>>>>> 2a0c3edac3b04f8959a2f1216b05b69b10113dd6
 
 // Definição da persona
 const persona = `
