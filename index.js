@@ -1,9 +1,10 @@
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const axios = require('axios');
+require('dotenv').config(); // Adicione esta linha para carregar as variáveis de ambiente
 
 // Configuração das chaves da API
-const discordToken = 'MTI1Mjc0MDk5MDA5MjE4NTY1MQ.GeRftG.bGQBQHl74i7GdD2TWEj6JViwG5NpXkZDDqjPPM';
-const openaiApiKey = 'sk-proj-ZbfD6uWKIIrtKLFHHENnT3BlbkFJlFJXCSeFZjrVLX0xSEev';
+const discordToken = process.env.DISCORD_TOKEN;
+const openaiApiKey = process.env.OPENAI_API_KEY;
 
 // Definição da persona
 const persona = `
@@ -94,14 +95,14 @@ function splitMessage(message, maxLength = 2000) {
 
   for (const line of message.split('\n')) {
     if (currentPart.length + line.length + 1 > maxLength) {
-      parts.push(currentPart.trim());
+      parts.push(currentPart);
       currentPart = '';
     }
     currentPart += line + '\n';
   }
 
-  if (currentPart.trim()) {
-    parts.push(currentPart.trim());
+  if (currentPart) {
+    parts.push(currentPart);
   }
 
   return parts;
